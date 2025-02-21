@@ -1,0 +1,10 @@
+{% for p_i in pro_img %}
+
+<p>{{ p_i.name }}</p>
+<p>Size: {{ p_i.size }}</p>
+<p>Colour: {{ p_i.colour }}</p>
+<p>Price: {{ p_i.price }}</p>
+<img src="{{ p_i.image.url }}" alt="{{ p_i.name }}" style="max-width: 200px; height: auto;">
+
+
+{% endfor %}
